@@ -2,7 +2,8 @@
 
 **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
 
-**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+**[Jekyll Now](https://github.com/barryclark/jekyll-now)** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+
 **Jekyll Ease** makes it easier to locally develop your Jekyll template, by using Docker for development environment creation; it also makes the template slightly terser by flex layout.
 
 - You don't need to touch the command line
@@ -48,7 +49,7 @@ Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Ma
 
 ## Local Development (Yay!!!)
 
-0. Read Dockerfile and there you go!
+0. Read [Dockerfile](https://github.com/xch91/jekyll-ease/blob/master/Dockerfile) and there you go!
 1. ~~Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.~~
 2. ~~Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`~~
 3. ~~Serve the site and watch for markup/sass changes `jekyll serve`~~
