@@ -116,11 +116,6 @@ img {
   color: $gray;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
 ::selection {
   color: $black;
   background: $lightGray;
@@ -132,8 +127,9 @@ img {
 
 header, main {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 800px;
   width: 100%;
+  padding: 5px 15px;
 }
 
 //
@@ -144,17 +140,30 @@ header {
   margin-top: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $lightGray;
+
+  @include mobile {
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 .site-avatar {
   width: 70px; height: 70px;
   background: center / cover no-repeat;
+
+  @include mobile {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
 }
 
 .site-info {
   color: $gray;
   margin-left: 10px;
-  flex: 1;
 
   h1 {
     font: 300 28px/1 $helveticaNeue;
@@ -169,11 +178,10 @@ header {
 nav {
   align-self: flex-end;
   font: 300 18px/1 $helveticaNeue;
-  display: flex;
-  justify-content: space-between;
-  min-width: 90px;
+  margin-left: auto;
 
   a {
+    padding: 0 8px;
     color: $darkGray;
     line-height: 2;
   }
